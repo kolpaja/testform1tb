@@ -1,0 +1,13 @@
+<h1> Template-Based Contact Form Example </h1>
+
+<form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+  <input type = "text" name = "fullName" placeholder = "Your full name" ngModel>
+  <br/>
+  
+  <input type = "email" name = "email" placeholder = "Your email" ngModel>
+  <br/>
+  
+  <textarea name = "message" placeholder = "Your message" ngModel></textarea>
+  <br/>
+  <input type = "submit" value = "Send">
+</form>
